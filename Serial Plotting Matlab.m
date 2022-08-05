@@ -105,6 +105,7 @@ while ishandle(plotGraph) %Loop when Plot is Active will run until plot is close
         set(plotGraph3,'XData',time,'YData',data3);
         
         axis([0 time(count) min max]);
+        flushinput(s);
         %Update the graph
         pause(delay);
 
